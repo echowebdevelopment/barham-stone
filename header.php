@@ -31,7 +31,18 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
 			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 		</a>
-
-		<?php get_template_part( 'global-templates/navbar', $navbar_type ); ?>
+		<div id="top-navbar" class="bg-secondary text-white py-3 text-center text-md-end">
+			<div class="container">
+			<?php if(get_field('phone','options')){ echo 'Tel: <a href="tel:'. get_field('phone','options') .'">+'. get_field('phone','options') . '</a>'; } ?>
+			<?php if(get_field('email','options')){ echo '<span class="divider"> | </span><a href="mailto:'. get_field('email','options') .'">'. get_field('email','options') . '</a>'; } ?>
+			<span class="divider"> | </span><ul class="top-navbar_socials">
+				<?php if(get_field('facebook','options')){ echo '<li><a href="'. get_field('facebook','options') .'" target="_blank"><i class="icon-facebook"></i></a></li>'; } ?>
+				<?php if(get_field('instagram','options')){ echo '<li><a href="'. get_field('instagram','options') .'" target="_blank"><i class="icon-instagram"></i></a></li>'; } ?>
+				<?php if(get_field('linkedin','options')){ echo '<li><a href="'. get_field('linkedin','options') .'" target="_blank"><i class="icon-linkedin"></i></a></li>'; } ?>
+			</ul>
+			<span class="divider"> | </span>Wholesale enquiry
+			</div>
+		</div>
+		<?php get_template_part( 'global-templates/navbar', 'offcanvas' ); ?>
 
 	</header><!-- #wrapper-navbar -->

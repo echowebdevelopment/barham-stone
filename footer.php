@@ -15,7 +15,7 @@ $container = get_theme_mod( 'echo_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper bg-secondary text-white" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
@@ -25,9 +25,9 @@ $container = get_theme_mod( 'echo_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
+					<div class="site-info text-end">
+						&copy; Barham Stone Ltd | All Rights reserved <?php echo do_shortcode('[current-year]'); ?> | Registration No. 4730372 | <?php echo do_shortcode('[by-ews]'); ?>
+						
 
 					</div><!-- .site-info -->
 

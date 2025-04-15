@@ -248,7 +248,7 @@ if ( ! function_exists( 'understrap_widget_classes' ) ) {
 				$widget_classes .= ' col-md-2';
 			} elseif ( $widget_count >= 3 ) {
 				// Three widgets per row if there's three or more widgets.
-				$widget_classes .= ' col-md-4';
+				$widget_classes .= ' col-md-3';
 			} elseif ( 2 === $widget_count ) {
 				// If two widgets are published.
 				$widget_classes .= ' col-md-6';

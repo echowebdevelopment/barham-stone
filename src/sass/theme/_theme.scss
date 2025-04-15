@@ -7,6 +7,134 @@
 /**************************************/
 /* !- Register Font Face              */
 /**************************************/
+/* source-sans-3-200 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/source-sans-3-v18-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-200italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 200;
+	src: url('../fonts/source-sans-3-v18-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-300 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/source-sans-3-v18-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-300italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 300;
+	src: url('../fonts/source-sans-3-v18-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-regular - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/source-sans-3-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/source-sans-3-v18-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-500 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/source-sans-3-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-500italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 500;
+	src: url('../fonts/source-sans-3-v18-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-600 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/source-sans-3-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-600italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 600;
+	src: url('../fonts/source-sans-3-v18-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-700 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/source-sans-3-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-700italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 700;
+	src: url('../fonts/source-sans-3-v18-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-800 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/source-sans-3-v18-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-800italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 800;
+	src: url('../fonts/source-sans-3-v18-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-900 - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/source-sans-3-v18-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* source-sans-3-900italic - latin */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Source Sans 3';
+	font-style: italic;
+	font-weight: 900;
+	src: url('../fonts/source-sans-3-v18-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
 @font-face {
   font-family: 'icomoon';
@@ -24,82 +152,52 @@
 /* !- Icon Font                       */
 /**************************************/
 
-%font-icon,
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* !-- Social Media Icons */
-.icon-tiktok::before {
-  content: '\e900';
-}
-.icon-x::before {
-  content: '\e901';
-}
-.icon-facebook-square::before {
-  content: '\e902';
-}
-.icon-facebook::before {
-  content: '\ea90';
-}
-.icon-instagram::before {
-  content: '\ea92';
-}
-.icon-youtube::before {
-  content: '\ea9d';
-}
-.icon-linkedin-square::before {
-  content: '\eac9';
-}
-.icon-linkedin::before {
-  content: '\eaca';
-}
-.icon-pinterest::before {
-  content: '\ead1';
-}
-
-/* !-- Credit Card Icons */
-.icon-cc-visa::before {
-  content: '\f1f0';
-}
-.icon-cc-mastercard::before {
-  content: '\f1f1';
-}
-.icon-cc-discover::before {
-  content: '\f1f2';
-}
-.icon-cc-amex::before {
-  content: '\f1f3';
-}
-.icon-cc-paypal::before {
-  content: '\f1f4';
-}
-.icon-cc-stripe::before {
-  content: '\f1f5';
-}
-.icon-apple-pay::before {
-  content: '\e903';
-}
-.icon-google-pay::before {
-  content: '\e904';
-}
-
-/* !-- Other Icons */
-.icon-share::before {
-  content: '\ea82';
-}
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-plus:before {
+	content: "\ea0a";
+  }
+  .icon-cross:before {
+	content: "\ea0f";
+  }
+  .icon-checkmark:before {
+	content: "\ea10";
+  }
+  .icon-arrow-up2:before {
+	content: "\ea3a";
+  }
+  .icon-arrow-right2:before {
+	content: "\ea3c";
+  }
+  .icon-arrow-down2:before {
+	content: "\ea3e";
+  }
+  .icon-arrow-left2:before {
+	content: "\ea40";
+  }
+  .icon-facebook:before {
+	content: "\ea90";
+  }
+  .icon-instagram:before {
+	content: "\ea92";
+  }
+  .icon-linkedin:before {
+	content: "\eaca";
+  }
+  
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
 
@@ -318,5 +416,117 @@ body .cky-consent-container {
 	body .cky-consent-container .cky-consent-bar {
 		left: 0;
 		bottom: 0;
+	}
+}
+
+/***************************************
+
+GLOBAL
+
+****************************************/
+body {
+	font-family: 'Source Sans 3';
+	color: $dark-grey;
+}
+a {
+	text-decoration: none;
+}
+/*****************************************
+**HEADER
+******************************************/
+#wrapper-navbar {
+    box-shadow: 0px 0 6px rgba(0, 0, 0, .2);
+}
+#top-navbar {
+	font-size: clamp(0.75rem, 0.659rem + 0.3883vw, 1.125rem);
+	a {
+		color: $white;
+	}
+	span.divider {
+		margin: 0 10px;
+	}
+}
+ul.top-navbar_socials {
+    display: inline-flex;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+	list-style: none;
+	i {
+		font-size: 12px;
+	}
+}
+#wrapper-navbar {
+	.nav-link {
+		font-size: clamp(1rem, 0.909rem + 0.3883vw, 1.375rem);
+		font-weight: 500;
+		letter-spacing: 0.66px;
+		color: $dark-grey;
+		text-transform: uppercase;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.custom-logo-link {
+		margin-top: -60px;
+		@include media-breakpoint-down(md) {
+			margin-top: 0;
+		}
+	}
+}
+@include media-breakpoint-down(lg) { 
+	.custom-logo-link img {
+		max-height: 120px;
+		width: auto;
+		@include media-breakpoint-down(md) {
+			max-height: 90px;
+		}
+	}
+ }
+
+ .menu-btn a.nav-link {
+	background: $primary;
+	color: #fff !important;
+	box-shadow: 0px 4px 0px #00000029;
+	border-radius: 4px;
+    display: flex;
+	min-width: 160px;
+	padding: 5px 12px !important;
+	justify-content: space-between;
+	&::after {
+		content: "\ea3c";
+		font-family: 'icomoon';
+	}
+	&:hover {
+		background: $dark-grey;
+	}
+ }
+ .navbar-nav {
+	width: 100%;
+	gap: 1rem;
+ }
+ @include media-breakpoint-up(md) {
+	.menu-btn {
+		margin-left: auto;
+	}
+}
+/********************************************************
+***FOOTER
+********************************************************/
+#wrapper-footer {
+	a {
+		color: #fff;
+	}
+}
+#wrapper-footer-full .menu {
+    list-style: none;
+    padding: 0;
+}
+#wrapper-footer-full {
+	background: white;
+	a {
+		color: $dark-grey;
 	}
 }
