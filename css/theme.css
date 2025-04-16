@@ -12853,4 +12853,19 @@ ul.top-navbar_socials i {
   color: #5D5D5D;
 }
 
+ul.footer_socials {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-title {
+  text-transform: uppercase;
+  font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=theme.css.map */
