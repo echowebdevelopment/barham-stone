@@ -10,7 +10,7 @@
 <div class="block-instagram" data-delay="0.1">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 mb-3">
                 <h2>Follow us on Instagram</h2>
             </div>
             <div class="col-lg-12">
