@@ -12823,6 +12823,7 @@ input[type=checkbox] {
   gap: 10px;
 }
 
+.wpcf7-acceptance span.wpcf7-list-item,
 span.wpcf7-list-item.first {
   margin-left: 0;
 }
