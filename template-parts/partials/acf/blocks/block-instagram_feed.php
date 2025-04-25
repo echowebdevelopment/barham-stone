@@ -14,7 +14,7 @@
                 <h2>Follow us on Instagram</h2>
             </div>
             <div class="col-lg-12">
-                <?php echo do_shortcode(". $args['shortcode'] ."); ?>
+                <?php echo $args['shortcode'] ?>
             </div>
         </div>
     </div>
