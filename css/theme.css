@@ -12788,7 +12788,7 @@ a.cover-link {
 }
 
 .bg-gray {
-  background-color: #D5D5D5 !important;
+  background-color: rgba(213, 213, 213, 0.1) !important;
 }
 
 /*form fields*/
