@@ -22,11 +22,6 @@
                         echo $text_block['title'];
                         echo '</'. $text_block['title_tag'] . '>';
                     }
-                    if($text_block['intro_text']){
-                        echo '<div class="intro">';
-                        echo $text_block['intro_text'];
-                        echo '</div>';
-                    }
                     if($text_block['blurb_text']){
                         echo $text_block['blurb_text'];
                     }
@@ -138,11 +133,6 @@
                                 echo '<'. $text_block['title_tag'] . ' class="section-title">';
                                 echo $text_block['title'];
                                 echo '</'. $text_block['title_tag'] . '>';
-                            }
-                            if($text_block['intro_text']){
-                                echo '<div class="intro">';
-                                echo $text_block['intro_text'];
-                                echo '</div>';
                             }
                             if($text_block['blurb_text']){
                                 echo $text_block['blurb_text'];

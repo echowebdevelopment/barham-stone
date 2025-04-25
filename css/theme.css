@@ -12749,6 +12749,12 @@ a {
 .btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button {
   font-weight: 600;
   font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+  background: #C3511E;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1607843137);
+  text-align: center;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  color: #fff;
 }
 .btn:hover, .wpcf7 input[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover {
   background: #D69013 !important;
@@ -12765,6 +12771,28 @@ a.cover-link {
 
 .swiper-pagination-bullet-active {
   background-color: #C3511E !important;
+}
+
+.block-text pre {
+  overflow: visible;
+  white-space: break-spaces;
+  font-family: inherit;
+  font-size: 1.2em;
+}
+
+.section-title {
+  font-weight: 900;
+}
+
+/*****************************************
+**TYPOGRAPHY
+******************************************/
+h2, .h2 {
+  font-size: clamp(1.875rem, 1.5413rem + 1.4239vw, 3.25rem);
+}
+
+h3, .h3 {
+  font-size: clamp(1.5625rem, 1.335rem + 0.9709vw, 2.5rem);
 }
 
 /*****************************************
@@ -12912,11 +12940,8 @@ ul.footer_socials {
 }
 .swiper-slide .btn, .swiper-slide .wpcf7 input[type=submit], .wpcf7 .swiper-slide input[type=submit], .swiper-slide .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .swiper-slide a.button, .swiper-slide .woocommerce-info a.button, .woocommerce-info .swiper-slide a.button {
   background: rgba(255, 255, 255, 0.5960784314) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1607843137);
   text-align: center;
-  letter-spacing: 0.32px;
   color: #C3511E;
-  text-transform: uppercase;
 }
 .swiper-slide .section-title {
   font-size: clamp(1.625rem, 1.443rem + 0.7767vw, 2.375rem);

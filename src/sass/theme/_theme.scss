@@ -434,6 +434,12 @@ a {
 .btn {
 	font-weight: 600;
 	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+    background: $primary;
+    box-shadow: 0px 4px 0px #00000029;
+    text-align: center;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+	color: #fff;
 	&:hover {
 		background: #D69013 !important;
 		color: #fff;
@@ -448,6 +454,25 @@ a.cover-link {
 }
 .swiper-pagination-bullet-active {
 	background-color: $primary !important;
+}
+.block-text pre {
+    overflow: visible;
+    white-space: break-spaces;
+    font-family: inherit;
+    font-size: 1.2em;
+}
+.section-title {
+    font-weight: 900;
+}
+/*****************************************
+**TYPOGRAPHY
+******************************************/
+
+h2 {
+	font-size: clamp(1.875rem, 1.5413rem + 1.4239vw, 3.25rem);
+}
+h3 {
+	font-size: clamp(1.5625rem, 1.335rem + 0.9709vw, 2.5rem);
 }
 /*****************************************
 **HEADER
