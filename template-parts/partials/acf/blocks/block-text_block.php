@@ -27,7 +27,7 @@
                     }
                     if($text_block['button']){
                         $button_block = $text_block['button'];
-                        echo '<a href="' .$button_block['url']. '" class="btn mt-5">';
+                        echo '<a href="' .$button_block['url']. '" class="btn mt-3">';
                         echo $button_block['title'];
                         echo '</a>';
                     }
@@ -139,7 +139,7 @@
                             }
                             if($text_block['button']){
                                 $button_block = $text_block['button'];
-                                echo '<a href="' .$button_block['url']. '" class="btn mt-5">';
+                                echo '<a href="' .$button_block['url']. '" class="btn mt-3">';
                                 echo $button_block['title'];
                                 echo '</a>';
                             }
