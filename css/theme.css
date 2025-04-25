@@ -12231,7 +12231,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 * .wpcf7-submit
 */
 .wpcf7 {
-  max-width: 600px;
   margin: 0 auto !important;
 }
 .wpcf7 .wpcf7-form p {
@@ -12785,6 +12784,7 @@ a.cover-link {
 }
 
 /*form fields*/
+.echo-field,
 .wpcf7-form-control-wrap input[type=text],
 .wpcf7-form-control-wrap input[type=tel],
 .wpcf7-form-control-wrap input[type=email],
