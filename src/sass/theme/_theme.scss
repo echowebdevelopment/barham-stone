@@ -497,10 +497,25 @@ input[type="checkbox"] {
 	display: flex;
     gap: 10px;
 }
-.wpcf7-acceptance span.wpcf7-list-item,
-span.wpcf7-list-item.first {
-    margin-left: 0;
+@include media-breakpoint-up(md) {
+	.wpcf7-acceptance span.wpcf7-list-item,
+	span.wpcf7-list-item.first {
+		margin-left: 0;
+	}	
 }
+
+@include media-breakpoint-up(down) { 
+	span.wpcf7-form-control.wpcf7-checkbox {
+		display: flex;
+		flex-flow: column;
+		gap: 5px;
+	}
+	button.wpcf7-form-control.wpcf7-submit.btn {
+		margin-top: 1rem;
+	}
+}
+ 
+
 /*****************************************
 **TYPOGRAPHY
 ******************************************/
