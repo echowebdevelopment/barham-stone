@@ -22,7 +22,7 @@
         <div class="col-lg-12">
         </div>
         <div class="col-lg-12">
-            <?php echo do_shortcode("[contact-form-7 id='. $args['form'] .']"); ?>
+            <?php echo do_shortcode('[contact-form-7 id="'. $args['form'] .'"]'); ?>
         </div>
     </div>
 </div> 
