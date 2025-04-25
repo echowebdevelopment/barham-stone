@@ -13087,4 +13087,22 @@ ul.gallery-content img {
   display: flex;
 }
 
+.cta-blurb {
+  font-size: clamp(1rem, 0.818rem + 0.7767vw, 1.75rem);
+}
+
+.block-cta-advert {
+  border-bottom: 10px solid #C3511E;
+}
+.block-cta-advert img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: 1;
+}
+.block-cta-advert .container {
+  z-index: 2;
+  position: relative;
+}
+
 /*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,16 @@
+.cta-blurb {
+    font-size: clamp(1rem, 0.818rem + 0.7767vw, 1.75rem);
+}
+
+.block-cta-advert {
+    border-bottom: 10px solid $primary;
+    img {
+        object-fit: cover;
+        opacity: .7;
+        z-index: 1;
+    }
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+}
