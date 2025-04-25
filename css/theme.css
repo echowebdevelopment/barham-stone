@@ -12792,6 +12792,12 @@ a.cover-link {
   border: 1px solid #D5D5D5;
   border-radius: 5px;
   padding: 15px 20px;
+  margin: 0.5em 0;
+}
+
+textarea.echo-field {
+  resize: none;
+  max-height: 200px;
 }
 
 /*****************************************
