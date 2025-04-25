@@ -434,6 +434,10 @@ a {
 .btn {
 	font-weight: 600;
 	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+	&:hover {
+		background: #D69013;
+		color: #fff;
+	}
 }
 a.cover-link {
     position: absolute;
@@ -512,9 +516,6 @@ ul.top-navbar_socials {
 	&::after {
 		content: "\ea3c";
 		font-family: 'icomoon';
-	}
-	&:hover {
-		background: $dark-grey;
 	}
  }
  .navbar-nav {
