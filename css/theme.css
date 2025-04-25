@@ -12751,7 +12751,7 @@ a {
   font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
 }
 .btn:hover, .wpcf7 input[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover {
-  background: #D69013;
+  background: #D69013 !important;
   color: #fff;
 }
 

@@ -435,7 +435,7 @@ a {
 	font-weight: 600;
 	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
 	&:hover {
-		background: #D69013;
+		background: #D69013 !important;
 		color: #fff;
 	}
 }
