@@ -12814,7 +12814,10 @@ input[type=checkbox] {
   appearance: none;
   background: white;
   width: 22px;
+  min-width: 22px;
+  min-height: 22px;
   height: 22px;
+  position: relative;
 }
 
 .wpcf7-list-item label {
@@ -12825,11 +12828,15 @@ input[type=checkbox] {
 
 input[type=checkbox]::before {
   content: "";
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 15px;
+  height: 15px;
   clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
   transform: scale(0);
   background-color: #C3511E;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
 }
 
 input[type=checkbox]:checked::before {
