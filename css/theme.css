@@ -12853,16 +12853,16 @@ input[type=checkbox]:hover {
     margin-left: 0;
   }
 }
-span.wpcf7-form-control.wpcf7-checkbox {
-  display: flex;
-  flex-flow: column;
-  gap: 5px;
+@media (max-width: 767.98px) {
+  span.wpcf7-form-control.wpcf7-checkbox {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  button.wpcf7-form-control.wpcf7-submit.btn {
+    margin-top: 1rem;
+  }
 }
-
-button.wpcf7-form-control.wpcf7-submit.btn {
-  margin-top: 1rem;
-}
-
 /*****************************************
 **TYPOGRAPHY
 ******************************************/

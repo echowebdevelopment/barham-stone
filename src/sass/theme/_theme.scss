@@ -526,7 +526,7 @@ input[type="checkbox"]:hover {
 	}	
 }
 
-@include media-breakpoint-up(down) { 
+@include media-breakpoint-down(md) { 
 	span.wpcf7-form-control.wpcf7-checkbox {
 		display: flex;
 		flex-flow: column;
