@@ -1,0 +1,26 @@
+.ito_item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    &:hover {
+        .btn {
+            background: #D69013 !important;
+		    color: #fff;
+        }
+    }
+}
+.ito_item img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.ito_item-content {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: end;
+}
