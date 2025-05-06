@@ -13179,6 +13179,28 @@ button.gclose.gbtn:hover {
   background: #C3511E;
 }
 
+.echo-form .gform_fields input[type=text],
+.echo-form .gform_fields input[type=email],
+.echo-form .gform_fields input[type=tel] {
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0.5em 0;
+  height: auto;
+  font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+}
+.echo-form .gform_fields {
+  gap: 10px !important;
+}
+
+body .gform_wrapper ::-moz-placeholder {
+  color: #D5D5D5;
+}
+
+body .gform_wrapper ::placeholder {
+  color: #D5D5D5;
+}
+
 .swiper-slide {
   position: relative;
   background: #fff;

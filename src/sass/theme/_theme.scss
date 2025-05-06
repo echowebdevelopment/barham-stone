@@ -829,3 +829,24 @@ button.gclose.gbtn {
 		background: $primary;
 	}
 }
+
+
+
+.echo-form {
+	.gform_fields input[type=text],
+	.gform_fields input[type=email],
+	.gform_fields input[type=tel] {
+		border: 1px solid #d5d5d5;
+		border-radius: 5px;
+		padding: .5rem 1rem;
+		margin: .5em 0;
+		height: auto;
+		font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+	}
+	.gform_fields {
+		gap: 10px !important;
+	}	
+}
+body .gform_wrapper ::placeholder {
+	color: #D5D5D5;
+}
