@@ -13148,12 +13148,12 @@ Gallery Group
 .gslide-description.description-bottom {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  max-width: 400px !important;
+  max-width: 50% !important;
   display: block;
   margin: 20px !important;
   background: rgba(0, 0, 0, 0.41) !important;
   border-radius: 4px;
+  min-width: 300px;
 }
 
 .gdesc-inner > * {
