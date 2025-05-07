@@ -12775,10 +12775,21 @@ a {
   letter-spacing: 0.32px;
   text-transform: uppercase;
   color: #fff;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  gap: 15px;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .btn:hover, .wpcf7 input[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover {
   background-color: #D69013 !important;
   color: #fff;
+}
+.btn::after, .wpcf7 input[type=submit]::after, .woocommerce-notices-wrapper .woocommerce-message a.button::after, .woocommerce-info a.button::after {
+  content: "\ea3c";
+  font-family: icomoon !important;
+  font-weight: 300;
 }
 
 .btn-icon {
@@ -13060,12 +13071,16 @@ ul.top-navbar_socials i {
 .menu-btn a.nav-link {
   background: #C3511E;
   color: #fff !important;
-  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1607843137);
   border-radius: 4px;
   display: flex;
   min-width: 160px;
-  padding: 5px 12px !important;
+  padding: 15px 20px !important;
   justify-content: space-between;
+  font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+  gap: 15px;
+  line-height: normal;
+  align-items: center;
 }
 .menu-btn a.nav-link::after {
   content: "\ea3c";
@@ -13523,6 +13538,19 @@ ul.gallery-content img {
   align-items: baseline;
   flex-wrap: wrap;
   justify-content: end;
+}
+
+.ito_item-content.contained-content {
+  position: absolute;
+  width: 60%;
+  min-width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 2rem;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=theme.css.map */

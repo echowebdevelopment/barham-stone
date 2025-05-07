@@ -19,6 +19,8 @@
     } else {
         $grid = 'col-xl-4 col-md-6';
     }
+
+    $layout = get_sub_field( 'layout' );
 ?>
 
 <div class="block-image-text d-flex flex-column text-white position-relative block-bg-image py-5 px-2" data-delay="0.1">
@@ -34,11 +36,11 @@
                     <div class="<?php echo $grid; ?>">
                         <div class="ito_item position-relative">
                                 <?php echo wp_get_attachment_image($bg, 'full') ?>
-                                <div class="ito_item-content p-4">
+                                <div class="ito_item-content p-4 <?php echo $layout; ?>">
                                     <?php if ( $title ) : ?><h3 class="section-title"><?php echo esc_html($title); ?></h3><?php endif; ?>
                                     <?php if ( $description ) : ?><p><?php echo mb_strimwidth($description, 0, 120, '...'); ?></p><?php endif; ?>
                                     <?php if ( $button['title'] && $button['url'] ) : ?>
-                                    <a href="<?php echo esc_url($button['url']); ?>" class="btn"><?php echo esc_html($button['title']); ?> <i class="icon-arrow-right2"></i></a>
+                                    <a href="<?php echo esc_url($button['url']); ?>" class="btn"><?php echo esc_html($button['title']); ?></a>
                                     <?php endif; ?>
                                 </div>
                                 <?php if ( $button['url'] ) : ?>

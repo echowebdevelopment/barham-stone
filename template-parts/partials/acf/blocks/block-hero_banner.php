@@ -15,7 +15,7 @@
                             <?php if ( $title ) : ?><h3 class="section-title"><?php echo esc_html($title); ?></h3><?php endif; ?>
                             <?php if ( $description ) : ?><p><?php echo mb_strimwidth($description, 0, 120, '...'); ?></p><?php endif; ?>
                             <?php if ( $button['title'] && $button['url'] ) : ?>
-                            <a href="<?php echo esc_url($button['url']); ?>" class="btn"><?php echo esc_html($button['title']); ?> <i class="icon-arrow-right2"></i></a>
+                            <a href="<?php echo esc_url($button['url']); ?>" class="btn"><?php echo esc_html($button['title']); ?></a>
                             <?php endif; ?>
                         </div>
                         <?php if ( $button['url'] ) : ?>

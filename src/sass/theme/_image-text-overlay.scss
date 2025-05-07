@@ -24,3 +24,15 @@
     flex-wrap: wrap;
     justify-content: end;
 }
+
+.ito_item-content.contained-content {
+    position: absolute;
+    width: 60%;
+    min-width: 300px;
+    height: max-content;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    margin: 2rem;
+    border-radius: 4px;
+}

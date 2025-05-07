@@ -456,9 +456,19 @@ a {
     letter-spacing: 0.32px;
     text-transform: uppercase;
 	color: #fff;
+	display: flex;
+	align-items: center;
+	line-height: normal;
+	gap: 15px;
+	max-width: max-content;
 	&:hover {
 		background-color: #D69013 !important;
 		color: #fff;
+	}
+	&::after {
+		content: "\ea3c";
+		font-family: icomoon !important;
+		font-weight: 300;
 	}
 }
 .btn-icon {
@@ -711,13 +721,18 @@ ul.top-navbar_socials {
 
  .menu-btn a.nav-link {
 	background: $primary;
-	color: #fff !important;
-	box-shadow: 0px 4px 0px #00000029;
-	border-radius: 4px;
+    color: #fff !important;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .1607843137);
+    border-radius: 4px;
     display: flex;
-	min-width: 160px;
-	padding: 5px 12px !important;
-	justify-content: space-between;
+    min-width: 160px;
+    padding: 15px 20px !important;
+    justify-content: space-between;
+    font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+    gap: 15px;
+    line-height: normal;
+    align-items: center;
+	
 	&::after {
 		content: "\ea3c";
 		font-family: 'icomoon';
