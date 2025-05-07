@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="block-text d-flex flex-column" data-delay="0.1">
+<div class="block-text d-flex flex-column py-5 px-2" data-delay="0.1">
     <div class="container">
         <div class="row align-items-center g-5">
         <div class="<?php if($content_right['content'] == 'blank-block'){ echo 'col-md-12'; }elseif($content_right['content'] == 'gallery-block'){ echo 'col-lg-5'; }else{ echo 'col-lg-6';} ?>">

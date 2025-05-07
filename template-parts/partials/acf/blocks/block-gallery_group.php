@@ -6,7 +6,7 @@
     $args = wp_parse_args( $args, $default );
 ?>
 
-<div class="block-gallery-group d-flex flex-column position-relative" data-delay="0.1">
+<div class="block-gallery-group d-flex flex-column position-relative py-5 px-2" data-delay="0.1">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

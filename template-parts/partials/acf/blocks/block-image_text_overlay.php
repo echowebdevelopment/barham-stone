@@ -21,7 +21,7 @@
     }
 ?>
 
-<div class="block-image-text d-flex flex-column text-white position-relative block-bg-image" data-delay="0.1">
+<div class="block-image-text d-flex flex-column text-white position-relative block-bg-image py-5 px-2" data-delay="0.1">
     <div class="container">
         <div class="row g-3">
             <?php if ( have_rows('ito_item') ) : ?>
