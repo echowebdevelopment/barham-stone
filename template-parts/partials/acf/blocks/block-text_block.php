@@ -2,18 +2,31 @@
     $default = array(
         "left_content"      => get_sub_field( 'left_content' ),
         "right_content"     => get_sub_field( 'right_content' ),
+        "layout"            => get_sub_field( 'layout' ),
     );
     
     $args = wp_parse_args( $args, $default );
     $content_right = $args['right_content'];
     $content_left = $args['left_content'];
 
+
+    $layout = $args['layout'];
+    if($layout == 'wide-first-column') {
+        $first_col = 'col-lg-7';
+        $second_col = 'col-lg-5';
+    }elseif($layout == 'wide-second-column'){
+        $first_col = 'col-lg-5';
+        $second_col = 'col-lg-7';
+    }else {
+        $first_col = 'col-lg-6';
+        $second_col = 'col-lg-6';
+    }
 ?>
 
 <div class="block-text d-flex flex-column py-5 px-2" data-delay="0.1">
     <div class="container">
         <div class="row align-items-center g-5">
-        <div class="<?php if($content_right['content'] == 'blank-block'){ echo 'col-md-12'; }else{ echo 'col-lg-6';} ?>">
+        <div class="<?php if($content_right['content'] == 'blank-block'){ echo 'col-md-12'; }else{ echo $first_col;} ?>">
             <?php 
                 if($content_left['content'] == 'text-block') {
                     $text_block = $content_left['text_block'];
@@ -125,7 +138,7 @@
                 }
             ?>
         </div>
-                    <div class="col-lg-6">
+                    <div class="<?php echo $second_col ?>">
                         <?php 
                         if($content_right['content'] == 'text-block') {
                             $text_block = $content_right['text_block'];
