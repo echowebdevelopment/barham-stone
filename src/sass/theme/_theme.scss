@@ -167,6 +167,18 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+.icon-chevron-right:before {
+	content: "\e900";
+  }
+  .icon-chevron-left:before {
+	content: "\e901";
+  }
+  .icon-chevron-down:before {
+	content: "\e902";
+  }
+  .icon-chevron-up:before {
+	content: "\e903";
+  }
   .icon-plus:before {
 	content: "\ea0a";
   }
@@ -445,7 +457,7 @@ a {
     text-transform: uppercase;
 	color: #fff;
 	&:hover {
-		background: #D69013 !important;
+		background-color: #D69013 !important;
 		color: #fff;
 	}
 }
@@ -539,7 +551,53 @@ input[type="checkbox"]:checked::before {
 input[type="checkbox"]:hover {
 	color: black;
 }
-	
+.echo-arrows {
+    box-shadow: none;
+    border: none;
+    display: flex !important;
+    align-items: center;
+	width: 40px;
+	height: 40px;
+	background-size:60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.echo-arrows.btn.disabled {
+    background-color: #d69013 !important;
+    color: #fff;
+    opacity: 1;
+}
+.wpcf7-previous {
+    font-size: 0;
+	background-image: url(icons/arrow-up.svg);
+}
+.wpcf7-submit.echo-arrows {
+    font-size: 0;
+	background-image: url(icons/arrow-down.svg);
+}
+.echo-submit {
+    box-shadow: none;
+    width: 100%;
+}
+.wpcf7-submit.echo-arrows,
+.echo-submit {
+	margin-top: 0 !important;
+}
+.dimension-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    border: #D5D5D5 solid 1px;
+}
+.echo-label-field {
+    display: flex;
+    align-items: center;
+	label {
+		margin: 0;
+		font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+		width: 40% !important;
+	}
+}
 @include media-breakpoint-up(md) {
 	.wpcf7-acceptance span.wpcf7-list-item,
 	span.wpcf7-list-item.first {
@@ -558,7 +616,34 @@ input[type="checkbox"]:hover {
 	}
 }
  
-
+/*uploads*/
+.codedropz-upload-handler {
+    border-radius: 20px;
+    background: white;
+    aspect-ratio: 1/0.8;
+    max-height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+	border: 2px solid $primary;
+	justify-content: center;
+    font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
+	color: $primary;
+}
+.codedropz-upload-inner {
+	&::before {
+		content: '';
+		width: 100%;
+		max-width: 70px;
+		background-image: url(icons/upload-icon.png);
+		aspect-ratio: 1;
+		display: block;
+		margin: auto;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
 /*****************************************
 **TYPOGRAPHY
 ******************************************/
