@@ -104,3 +104,13 @@ ul.gallery-content {
 .controls:hover #play-pause.hide {
     display: flex;
 }
+
+.block-text .gallery-item img {
+    object-fit: cover;
+}
+.block-text .gallery-item {
+    max-height: 250px;
+    overflow: hidden;
+    aspect-ratio: 2 / 1;
+    padding: .5rem;
+}

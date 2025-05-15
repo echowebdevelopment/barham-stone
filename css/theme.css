@@ -188,10 +188,8 @@ p {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -2040,8 +2038,6 @@ progress {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2123,10 +2119,6 @@ progress {
 .wpcf7 select::-webkit-date-and-time-value,
 .wpcf7 textarea::-webkit-date-and-time-value {
   height: 1.5em;
-}
-.form-control::-moz-placeholder, .wpcf7 .wpcf7-validation-errors::-moz-placeholder, .wpcf7 input[type=text]::-moz-placeholder, .wpcf7 input[type=search]::-moz-placeholder, .wpcf7 input[type=url]::-moz-placeholder, .wpcf7 input[type=tel]::-moz-placeholder, .wpcf7 input[type=number]::-moz-placeholder, .wpcf7 input[type=range]::-moz-placeholder, .wpcf7 input[type=date]::-moz-placeholder, .wpcf7 input[type=month]::-moz-placeholder, .wpcf7 input[type=week]::-moz-placeholder, .wpcf7 input[type=time]::-moz-placeholder, .wpcf7 input[type=datetime]::-moz-placeholder, .wpcf7 input[type=datetime-local]::-moz-placeholder, .wpcf7 input[type=color]::-moz-placeholder, .wpcf7 input[type=email]::-moz-placeholder, .wpcf7 input[type=file]::-moz-placeholder, .wpcf7 input[type=submit]::-moz-placeholder, .wpcf7 select::-moz-placeholder, .wpcf7 textarea::-moz-placeholder {
-  color: #6c757d;
-  opacity: 1;
 }
 .form-control::placeholder, .wpcf7 .wpcf7-validation-errors::placeholder, .wpcf7 input[type=text]::placeholder,
 .wpcf7 input[type=search]::placeholder,
@@ -2337,8 +2329,6 @@ textarea.form-control-lg {
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2411,10 +2401,7 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
@@ -2509,8 +2496,6 @@ textarea.form-control-lg {
   height: 1.5rem;
   padding: 0;
   background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 .form-range:focus {
@@ -2532,14 +2517,11 @@ textarea.form-control-lg {
   background-color: #C3511E;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-webkit-slider-thumb {
-    -webkit-transition: none;
     transition: none;
   }
 }
@@ -2561,14 +2543,11 @@ textarea.form-control-lg {
   background-color: #C3511E;
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
-    -moz-transition: none;
     transition: none;
   }
 }
@@ -2662,9 +2641,6 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::-moz-placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors::-moz-placeholder, .wpcf7 .form-floating > input[type=text]::-moz-placeholder, .wpcf7 .form-floating > input[type=search]::-moz-placeholder, .wpcf7 .form-floating > input[type=url]::-moz-placeholder, .wpcf7 .form-floating > input[type=tel]::-moz-placeholder, .wpcf7 .form-floating > input[type=number]::-moz-placeholder, .wpcf7 .form-floating > input[type=range]::-moz-placeholder, .wpcf7 .form-floating > input[type=date]::-moz-placeholder, .wpcf7 .form-floating > input[type=month]::-moz-placeholder, .wpcf7 .form-floating > input[type=week]::-moz-placeholder, .wpcf7 .form-floating > input[type=time]::-moz-placeholder, .wpcf7 .form-floating > input[type=datetime]::-moz-placeholder, .wpcf7 .form-floating > input[type=datetime-local]::-moz-placeholder, .wpcf7 .form-floating > input[type=color]::-moz-placeholder, .wpcf7 .form-floating > input[type=email]::-moz-placeholder, .wpcf7 .form-floating > input[type=file]::-moz-placeholder, .wpcf7 .form-floating > input[type=submit]::-moz-placeholder, .wpcf7 .form-floating > select::-moz-placeholder, .wpcf7 .form-floating > textarea::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
-  color: transparent;
-}
 .form-floating > .form-control::placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors::placeholder, .wpcf7 .form-floating > input[type=text]::placeholder,
 .wpcf7 .form-floating > input[type=search]::placeholder,
 .wpcf7 .form-floating > input[type=url]::placeholder,
@@ -2685,10 +2661,6 @@ textarea.form-control-lg {
 .wpcf7 .form-floating > textarea::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
-}
-.form-floating > .form-control:not(:-moz-placeholder), .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=text]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=search]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=url]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=tel]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=number]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=range]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=date]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=month]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=week]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=time]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=datetime]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=datetime-local]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=color]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=email]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=file]:not(:-moz-placeholder), .wpcf7 .form-floating > input[type=submit]:not(:-moz-placeholder), .wpcf7 .form-floating > select:not(:-moz-placeholder), .wpcf7 .form-floating > textarea:not(:-moz-placeholder), .form-floating > .form-control-plaintext:not(:-moz-placeholder) {
-  padding-top: 1.625rem;
-  padding-bottom: 0.625rem;
 }
 .form-floating > .form-control:focus, .wpcf7 .form-floating > .wpcf7-validation-errors:focus, .wpcf7 .form-floating > input[type=text]:focus,
 .wpcf7 .form-floating > input[type=search]:focus,
@@ -2755,10 +2727,6 @@ textarea.form-control-lg {
 .form-floating > .form-select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
-}
-.form-floating > .form-control:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=text]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=search]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=url]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=tel]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=number]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=range]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=date]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=month]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=week]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=time]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=datetime]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=datetime-local]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=color]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=email]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=file]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > input[type=submit]:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > select:not(:-moz-placeholder) ~ label, .wpcf7 .form-floating > textarea:not(:-moz-placeholder) ~ label {
-  opacity: 0.65;
-  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control:focus ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:focus ~ label, .wpcf7 .form-floating > input[type=text]:focus ~ label,
 .wpcf7 .form-floating > input[type=search]:focus ~ label,
@@ -3565,8 +3533,6 @@ textarea.form-control-lg {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
@@ -5981,8 +5947,6 @@ textarea.form-control-lg {
 }
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   opacity: 0.25;
 }
@@ -6029,7 +5993,6 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   position: absolute;
   z-index: var(--bs-toast-zindex);
-  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
@@ -7413,16 +7376,13 @@ textarea.form-control-lg {
   }
 }
 .placeholder-wave {
-  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
   mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-  -webkit-mask-size: 200% 100%;
   mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
 
 @keyframes placeholder-wave {
   100% {
-    -webkit-mask-position: -200% 0%;
     mask-position: -200% 0%;
   }
 }
@@ -8987,20 +8947,14 @@ textarea.form-control-lg {
 }
 
 .user-select-all {
-  -webkit-user-select: all !important;
-  -moz-user-select: all !important;
   user-select: all !important;
 }
 
 .user-select-auto {
-  -webkit-user-select: auto !important;
-  -moz-user-select: auto !important;
   user-select: auto !important;
 }
 
 .user-select-none {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
   user-select: none !important;
 }
 
@@ -11676,8 +11630,6 @@ body {
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -12703,7 +12655,6 @@ img.block__bg {
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -12779,7 +12730,6 @@ a {
   align-items: center;
   line-height: normal;
   gap: 15px;
-  max-width: -moz-max-content;
   max-width: max-content;
 }
 .btn:hover, .wpcf7 input[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover {
@@ -12860,8 +12810,6 @@ input[type=checkbox] {
   border: 1px solid #d5d5d5;
   border-radius: 5px;
   padding: 0.5em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background: white;
   width: 22px;
@@ -13152,7 +13100,6 @@ MAP
 .block-map iframe {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   z-index: 1;
@@ -13166,7 +13113,6 @@ MAP
 }
 
 .block-map_nap {
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -13220,7 +13166,6 @@ Gallery Group
   background-color: #333;
 }
 .item img {
-  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -13260,7 +13205,6 @@ Gallery Group
   height: 100%;
   max-height: 80%;
   position: relative;
-  width: -moz-max-content !important;
   width: max-content !important;
 }
 
@@ -13307,10 +13251,6 @@ button.gclose.gbtn:hover {
   gap: 10px !important;
 }
 
-body .gform_wrapper ::-moz-placeholder {
-  color: #D5D5D5;
-}
-
 body .gform_wrapper ::placeholder {
   color: #D5D5D5;
 }
@@ -13323,7 +13263,6 @@ body .gform_wrapper ::placeholder {
   display: flex !important;
 }
 .swiper-slide img {
-  -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -13390,11 +13329,9 @@ ul.gallery-content li:first-child:nth-last-child(2) ~ li {
   width: 50%;
 }
 ul.gallery-content img {
-  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 100%;
-  -o-object-position: center;
   object-position: center;
 }
 
@@ -13488,6 +13425,17 @@ ul.gallery-content img {
   display: flex;
 }
 
+.block-text .gallery-item img {
+  object-fit: cover;
+}
+
+.block-text .gallery-item {
+  max-height: 250px;
+  overflow: hidden;
+  aspect-ratio: 2/1;
+  padding: 0.5rem;
+}
+
 .cta-blurb {
   font-size: clamp(1rem, 0.818rem + 0.7767vw, 1.75rem);
 }
@@ -13500,7 +13448,6 @@ ul.gallery-content img {
   opacity: 0.7;
 }
 .block-bg-image img {
-  -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
 }
@@ -13544,7 +13491,6 @@ ul.gallery-content img {
   position: absolute;
   width: 60%;
   min-width: 300px;
-  height: -moz-max-content;
   height: max-content;
   bottom: 5%;
   left: 5%;
