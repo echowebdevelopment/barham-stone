@@ -13190,7 +13190,6 @@ Gallery Group
   line-height: 1em;
   padding-bottom: 0.5rem;
   color: #D5D5D5;
-  background: transparent;
 }
 .gallery-group_nav .nav-link i {
   color: #C3511E;
@@ -13200,6 +13199,7 @@ Gallery Group
   border-bottom: 10px solid #C3511E !important;
   opacity: 1;
   color: #5D5D5D;
+  background-color: transparent !important;
 }
 .gallery-group_nav .nav-link.active i {
   color: #C3511E;

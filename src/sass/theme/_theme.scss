@@ -832,7 +832,6 @@ Gallery Group
     line-height: 1em;
     padding-bottom: .5rem;
 	color: #D5D5D5;
-	background: transparent;
 	i {
 		color: #C3511E;
 		font-size: 60%;
@@ -841,6 +840,7 @@ Gallery Group
 		border-bottom: 10px solid $primary !important;
 		opacity: 1;
 		color: #5D5D5D;
+		background-color: transparent !important;
 		i {
 			color: $primary;
 		}
