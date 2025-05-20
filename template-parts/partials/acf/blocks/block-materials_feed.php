@@ -12,7 +12,7 @@ $args = [
     'posts_per_page' => 10,
     'paged' => get_query_var('paged') ?: 1,
     'orderby'   => 'meta_value',
-    'order' => 'DESC',
+    'order' => 'ASC',
     'tax_query'      => [
         [
             'taxonomy' => 'material-type', // change to your actual taxonomy name
@@ -57,7 +57,7 @@ $materials_query = new WP_Query($args);
             </div>
 
             <div class="pagination">
-                <?php understrap_pagination(['query' => $materials_query]); ?>
+                <?php understrap_pagination() ?>
             </div>
 
         <?php else : ?>
