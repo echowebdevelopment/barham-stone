@@ -571,6 +571,8 @@ input[type="checkbox"]:hover {
     display: flex !important;
     align-items: center;
 	width: 40px;
+	min-width: 40px;
+	max-width: 40px;
 	height: 40px;
 	background-size:60%;
 	background-position: center;
@@ -955,6 +957,6 @@ body .gform_wrapper ::placeholder {
 	color: #D5D5D5;
 }
 
-button.wpcf7-form-control.wpcf7-submit.btn {
+button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
     max-height: max-content;
 }
