@@ -914,7 +914,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -924,6 +924,35 @@
                                 "2": "2"
                             },
                             "default_value": 2,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": ""
+                        },
+                        {
+                            "key": "field_682c9ee132b15",
+                            "label": "Layout",
+                            "name": "layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default-content - Default": "default-content - Default",
+                                "contained-content - Contained Content": "contained-content - Contained Content"
+                            },
+                            "default_value": "default-content",
                             "return_format": "value",
                             "multiple": 0,
                             "allow_null": 0,
@@ -1436,5 +1465,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1747751652
+    "modified": 1747754933
 }
