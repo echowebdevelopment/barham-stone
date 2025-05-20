@@ -25,7 +25,7 @@ $materials_query = new WP_Query($args);
 ?>
 <div class="block-materials py-5 px-2" data-delay="0.1">
     <div class="container mb-3">
-        <h3 class="section-title"><?php echo get_sub_field( 'title' ) ?: 'Materials'; ?></h3>
+        <h3 class="section-title"><?php echo get_sub_field( 'title' ) ?: 'Partners'; ?></h3>
     </div>
     <div class="container">
         <?php
@@ -41,11 +41,6 @@ $materials_query = new WP_Query($args);
                                 <div class="material-content">
                                     <h4 class="section-title"><?php the_title(); ?></h4>
                                     <div><?php the_field('description'); ?></div>
-                                    <?php if ($file = get_field('file_upload')): ?>
-                                        <a href="<?php echo esc_url($file['url']); ?>" class="btn-small">
-                                            View PDF
-                                        </a>
-                                    <?php endif; ?>
                                     <?php $website = get_field('url'); ?>
                                         <a href="<?php echo $website['url']; ?>" class="btn-small">Website <i class="icon-arrow-right2"></i></a>
                                     
@@ -61,7 +56,7 @@ $materials_query = new WP_Query($args);
             
 
         <?php else : ?>
-            <p>No materials found.</p>
+            <p>No Partners found.</p>
         <?php endif;
 
         ?>
