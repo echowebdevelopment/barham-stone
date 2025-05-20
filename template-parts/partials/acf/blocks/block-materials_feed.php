@@ -6,11 +6,11 @@ $default = array(
 );
 
 $args = wp_parse_args( $args, $default );
-
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = [
     'post_type' => 'material',
     'posts_per_page' => 10,
-    'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+    'paged' => $paged,
     'orderby'   => 'meta_value',
     'order' => 'ASC',
     'tax_query'      => [
@@ -22,6 +22,7 @@ $args = [
     ],
 ];
 $materials_query = new WP_Query($args);
+echo $materials_query->max_num_pages;
 ?>
 <div class="block-materials py-5 px-2" data-delay="0.1">
     <div class="container mb-3">
