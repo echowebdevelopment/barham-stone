@@ -22,7 +22,6 @@ $args = [
     ],
 ];
 $materials_query = new WP_Query($args);
-echo $materials_query->max_num_pages;
 ?>
 <div class="block-materials py-5 px-2" data-delay="0.1">
     <div class="container mb-3">
