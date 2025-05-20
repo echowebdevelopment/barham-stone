@@ -1,7 +1,8 @@
 <?php
 
 $default = array(
-    "select_feed" => get_sub_field( 'select_feed' )
+    "select_feed"   => get_sub_field( 'select_feed' ),
+    "title"         => get_sub_field( 'title' )
 );
 
 $args = wp_parse_args( $args, $default );
@@ -21,10 +22,13 @@ $args = [
 $materials_query = new WP_Query($args);
 ?>
 <div class="block-materials py-5 px-2" data-delay="0.1">
+    <div class="container mb-3">
+        <h3 class="section-title"><?php echo get_sub_field( 'title' ) ?: 'Materials'; ?></h3>
+    </div>
     <div class="container">
         <?php
         if ($materials_query->have_posts()) : ?>
-            <div class="row materials-list">
+            <div class="row materials-list gap-5">
                 <?php while ($materials_query->have_posts()) : $materials_query->the_post(); ?>
                     <div class="col-lg-4 col-md-6 material-item position-relative">
                     <?php
@@ -35,13 +39,14 @@ $materials_query = new WP_Query($args);
                         }
                     ?>
                         <div class="material-content">
-                            <h3><?php the_title(); ?></h3>
+                            <h4 class="section-title"><?php the_title(); ?></h4>
                             <div><?php the_field('description'); ?></div>
                             <?php if ($file = get_field('file_upload')): ?>
-                                <a href="<?php echo esc_url($file['url']); ?>" download class="btn">
-                                    Download <?php echo esc_html($file['filename']); ?>
+                                <a href="<?php echo esc_url($file['url']); ?>" class="btn-small">
+                                    View PDF
                                 </a>
                             <?php endif; ?>
+                            <a href="<?php the_permalink(); ?>" class="btn-small">Gallery <i class="icon-arrow-right2"></i></a>
                         </div>
                     </div>
                 <?php endwhile; ?>

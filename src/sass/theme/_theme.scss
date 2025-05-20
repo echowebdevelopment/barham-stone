@@ -478,6 +478,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+	&:after {
+		display: none;
+	}
 }
 a.cover-link {
     position: absolute;
@@ -949,4 +952,8 @@ button.gclose.gbtn {
 }
 body .gform_wrapper ::placeholder {
 	color: #D5D5D5;
+}
+
+button.wpcf7-form-control.wpcf7-submit.btn {
+    max-height: max-content;
 }

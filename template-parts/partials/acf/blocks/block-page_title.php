@@ -13,7 +13,11 @@
 ?>
 
 <div class="block-page-title d-flex flex-column text-white py-5 position-relative block-bg-image border-bottom" data-delay="0.1">
-    <?php echo wp_get_attachment_image($bg, 'full', "", ["class" => "bg-image object-fit-cover w-100 h-100 position-absolute top-0 start-0"]) ?>
+    <?php if($bg) {?>
+        <?php echo wp_get_attachment_image($bg, 'full', "", ["class" => "bg-image object-fit-cover w-100 h-100 position-absolute top-0 start-0"]) ?>
+    <?php } else { ?> 
+        <img src="<?php echo get_template_directory_uri() . '/css/icons/default-banner.jpg'; ?>" class="bg-image object-fit-cover w-100 h-100 position-absolute top-0 start-0">
+    <?php } ?>
     <div class="container my-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 bg-gradient p-5 rounded-2">
