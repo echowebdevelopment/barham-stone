@@ -49,7 +49,9 @@ $materials_query = new WP_Query($args);
                                             View PDF
                                         </a>
                                     <?php endif; ?>
-                                    <a href="<?php the_permalink(); ?>" class="btn-small">Gallery <i class="icon-arrow-right2"></i></a>
+                                    <!--
+                                        <a href="<?php the_permalink(); ?>" class="btn-small">Gallery <i class="icon-arrow-right2"></i></a>
+                                    -->
                                 </div>
                         </div>
                     </div>
