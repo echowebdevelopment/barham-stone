@@ -9,7 +9,7 @@ $args = wp_parse_args( $args, $default );
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = [
     'post_type' => 'material',
-    'posts_per_page' => 9,
+    'posts_per_page' => -1,
     'paged' => $paged,
     'orderby'   => 'meta_value',
     'order' => 'ASC',
@@ -55,10 +55,7 @@ echo $materials_query->max_num_pages;
                         </div>
                     </div>
                 <?php endwhile; ?>
-                 <!-- UnderStrap Pagination -->
-                    <div class="pagination-wrapper">
-                        <?php understrap_pagination(); ?>
-                    </div>
+            
 
                 <?php wp_reset_postdata(); ?>
             </div>
