@@ -13214,6 +13214,15 @@ nav.gallery-group_nav #nav-tab {
     max-width: 60%;
   }
 }
+@media (max-width: 767.98px) {
+  nav.gallery-group_nav #nav-tab {
+    flex-flow: column;
+  }
+  .gallery-group_nav .nav-link {
+    text-align: left;
+    padding-top: 0.5rem;
+  }
+}
 .photo-gallery {
   display: flex;
   flex-wrap: wrap;

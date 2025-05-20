@@ -855,7 +855,15 @@ nav.gallery-group_nav #nav-tab {
 	}
 	
 }
-
+@include media-breakpoint-down(md) {
+	nav.gallery-group_nav #nav-tab {
+		flex-flow: column;
+	}
+	.gallery-group_nav .nav-link {
+		text-align: left;
+    	padding-top: .5rem;
+	}
+}
 .photo-gallery {
 	display: flex;
 	flex-wrap: wrap;
