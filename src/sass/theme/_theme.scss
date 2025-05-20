@@ -822,6 +822,9 @@ MAP
 /*********************************************
 Gallery Group
 **********************************************/
+nav.gallery-group_nav #nav-tab {
+    justify-content: space-between;
+}
 .gallery-group_nav .nav-link{
 	border: none;
 }
