@@ -10,7 +10,7 @@ $args = wp_parse_args( $args, $default );
 $args = [
     'post_type' => 'material',
     'posts_per_page' => 10,
-    'paged' => get_query_var('paged') ?: 1,
+    'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
     'orderby'   => 'meta_value',
     'order' => 'ASC',
     'tax_query'      => [
@@ -57,7 +57,7 @@ $materials_query = new WP_Query($args);
             </div>
 
             <div class="pagination">
-                <?php understrap_pagination() ?>
+                <?php understrap_pagination(['query' => $materials_query]); ?>
             </div>
 
         <?php else : ?>
