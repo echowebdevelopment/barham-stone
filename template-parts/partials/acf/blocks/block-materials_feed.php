@@ -9,7 +9,7 @@ $args = wp_parse_args( $args, $default );
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = [
     'post_type' => 'material',
-    'posts_per_page' => 10,
+    'posts_per_page' => 9,
     'paged' => $paged,
     'orderby'   => 'meta_value',
     'order' => 'ASC',
@@ -58,7 +58,16 @@ echo $materials_query->max_num_pages;
             </div>
 
             <div class="pagination">
-                <?php understrap_pagination(['query' => $materials_query]); ?>
+                <?php
+                    if (function_exists('understrap_pagination')) {
+                        understrap_pagination(['query' => $materials_query]);
+                    } else {
+                        echo paginate_links([
+                            'total'   => $materials_query->max_num_pages,
+                            'current' => $paged,
+                        ]);
+                    }
+                ?>
             </div>
 
         <?php else : ?>
