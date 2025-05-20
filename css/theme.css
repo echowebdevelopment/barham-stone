@@ -13190,6 +13190,7 @@ Gallery Group
   line-height: 1em;
   padding-bottom: 0.5rem;
   color: #D5D5D5;
+  background: transparent;
 }
 .gallery-group_nav .nav-link i {
   color: #C3511E;
