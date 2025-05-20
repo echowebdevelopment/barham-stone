@@ -55,18 +55,11 @@ echo $materials_query->max_num_pages;
                         </div>
                     </div>
                 <?php endwhile; ?>
-                <div class="pagination">
-                    <?php
-                        if (function_exists('understrap_pagination')) {
-                            understrap_pagination(['query' => $materials_query]);
-                        } else {
-                            echo paginate_links([
-                                'total'   => $materials_query->max_num_pages,
-                                'current' => $paged,
-                            ]);
-                        }
-                    ?>
-                </div>
+                 <!-- UnderStrap Pagination -->
+                    <div class="pagination-wrapper">
+                        <?php understrap_pagination(); ?>
+                    </div>
+
                 <?php wp_reset_postdata(); ?>
             </div>
 
