@@ -42,7 +42,7 @@ $materials_query = new WP_Query($args);
                                     <h4 class="section-title"><?php the_title(); ?></h4>
                                     <div><?php the_field('description'); ?></div>
                                     <?php $website = get_field('url'); ?>
-                                        <a href="<?php echo $website['url']; ?>" class="btn-small">Website <i class="icon-arrow-right2"></i></a>
+                                        <a href="<?php echo $website['url']; ?>" class="btn-small" target="_blank">Website <i class="icon-arrow-right2"></i></a>
                                     
                                 </div>
                         </div>
