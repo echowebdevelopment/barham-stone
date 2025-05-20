@@ -11,6 +11,8 @@ $args = [
     'post_type' => 'material',
     'posts_per_page' => 10,
     'paged' => get_query_var('paged') ?: 1,
+    'orderby'   => 'meta_value',
+    'order' => 'DESC',
     'tax_query'      => [
         [
             'taxonomy' => 'material-type', // change to your actual taxonomy name
@@ -28,9 +30,9 @@ $materials_query = new WP_Query($args);
     <div class="container">
         <?php
         if ($materials_query->have_posts()) : ?>
-            <div class="row materials-list gap-5">
+            <div class="row materials-list">
                 <?php while ($materials_query->have_posts()) : $materials_query->the_post(); ?>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 p-2">
                         <div class="material-item position-relative">
                             <?php
                                 if ( has_post_thumbnail() ) {
