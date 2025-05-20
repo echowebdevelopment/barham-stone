@@ -39,8 +39,8 @@ $materials_query = new WP_Query($args);
                                 <?php echo wp_get_attachment_image($bg, 'full', "", ["class" => "bg-image object-fit-contain object-fit-center position-absolute top-0 start-0","alt"=>"some"]) ?>
                             <?php } ?>
                                 <div class="material-content">
-                                    <h4 class="section-title"><?php the_title(); ?></h4>
-                                    <div><?php the_field('description'); ?></div>
+                                    <!--<h4 class="section-title"><?php the_title(); ?></h4>
+                                    <div><?php the_field('description'); ?></div>-->
                                     <?php $website = get_field('url'); ?>
                                         <a href="<?php echo $website['url']; ?>" class="btn-small" target="_blank">Website <i class="icon-arrow-right2"></i></a>
                                     
