@@ -13590,6 +13590,7 @@ ul.gallery-content img {
   background: rgba(110, 110, 110, 0.2431372549);
   color: #fff;
   padding: 1rem;
+  width: 100%;
 }
 .material-item .material-content .section-title {
   font-size: clamp(1.125rem, 0.7913rem + 1.4239vw, 2.5rem);

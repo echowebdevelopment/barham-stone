@@ -30,23 +30,25 @@ $materials_query = new WP_Query($args);
         if ($materials_query->have_posts()) : ?>
             <div class="row materials-list gap-5">
                 <?php while ($materials_query->have_posts()) : $materials_query->the_post(); ?>
-                    <div class="col-lg-4 col-md-6 material-item position-relative">
-                    <?php
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail( 'large', array(
-                                'class' => 'bg-image object-fit-cover w-100 h-100 position-absolute top-0 start-0'
-                            ) );
-                        }
-                    ?>
-                        <div class="material-content">
-                            <h4 class="section-title"><?php the_title(); ?></h4>
-                            <div><?php the_field('description'); ?></div>
-                            <?php if ($file = get_field('file_upload')): ?>
-                                <a href="<?php echo esc_url($file['url']); ?>" class="btn-small">
-                                    View PDF
-                                </a>
-                            <?php endif; ?>
-                            <a href="<?php the_permalink(); ?>" class="btn-small">Gallery <i class="icon-arrow-right2"></i></a>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="material-item position-relative">
+                            <?php
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail( 'large', array(
+                                        'class' => 'bg-image object-fit-cover w-100 h-100 position-absolute top-0 start-0'
+                                    ) );
+                                }
+                            ?>
+                                <div class="material-content">
+                                    <h4 class="section-title"><?php the_title(); ?></h4>
+                                    <div><?php the_field('description'); ?></div>
+                                    <?php if ($file = get_field('file_upload')): ?>
+                                        <a href="<?php echo esc_url($file['url']); ?>" class="btn-small">
+                                            View PDF
+                                        </a>
+                                    <?php endif; ?>
+                                    <a href="<?php the_permalink(); ?>" class="btn-small">Gallery <i class="icon-arrow-right2"></i></a>
+                                </div>
                         </div>
                     </div>
                 <?php endwhile; ?>
