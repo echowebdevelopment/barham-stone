@@ -914,6 +914,11 @@ nav.gallery-group_nav #nav-tab {
 		flex: 1 1 calc(50% - 5px);
 	}
 }
+@include media-breakpoint-down(md) {
+	.item {
+		flex: 1 1 calc(50% - 6.7px);
+	}
+}
 /*pop up*/
 
 .ginner-container.desc-bottom {
