@@ -138,7 +138,7 @@
                 }
             ?>
         </div>
-                    <div class="<?php echo $second_col ?>">
+                    <div class="<?php if($content_right['content'] == 'blank-block'){ echo 'd-none'; }else{ echo $second_col;} ?>">
                         <?php 
                         if($content_right['content'] == 'text-block') {
                             $text_block = $content_right['text_block'];
