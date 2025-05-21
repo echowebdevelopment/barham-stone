@@ -482,6 +482,23 @@ a {
 		display: none;
 	}
 }
+.link-text {
+    text-align: center;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+	color: $primary;
+	display: flex;
+	align-items: center;
+	line-height: normal;
+	gap: 15px;
+	max-width: max-content;
+	padding: 1rem 0;
+	&:after {
+		content: "\ea3c";
+		font-family: icomoon !important;
+		font-weight: 300;
+	}
+}
 a.cover-link {
     position: absolute;
     top: 0;
@@ -767,7 +784,7 @@ ul.top-navbar_socials {
 }
 #wrapper-footer-full {
 	background: white;
-	a {
+	a:not(.btn, .link-text) {
 		color: $dark-grey;
 	}
 }
@@ -784,7 +801,10 @@ ul.footer_socials {
     font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
     font-weight: 600;
 }
-
+img.namm-logo {
+    height: 100px;
+    display: block;
+}
 /*************************************
 BACKGROUND / COLOR OVERRIDE
 *************************************/

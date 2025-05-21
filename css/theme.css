@@ -12804,6 +12804,25 @@ a {
   display: none;
 }
 
+.link-text {
+  text-align: center;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  color: #C3511E;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  gap: 15px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 1rem 0;
+}
+.link-text:after {
+  content: "\ea3c";
+  font-family: icomoon !important;
+  font-weight: 300;
+}
+
 a.cover-link {
   position: absolute;
   top: 0;
@@ -13118,7 +13137,7 @@ ul.top-navbar_socials i {
 #wrapper-footer-full {
   background: white;
 }
-#wrapper-footer-full a {
+#wrapper-footer-full a:not(.btn, .link-text) {
   color: #5D5D5D;
 }
 
@@ -13135,6 +13154,11 @@ ul.footer_socials {
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
   font-weight: 600;
+}
+
+img.namm-logo {
+  height: 100px;
+  display: block;
 }
 
 /*************************************
