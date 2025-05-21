@@ -13161,6 +13161,10 @@ img.namm-logo {
   display: block;
 }
 
+.site-info {
+  font-size: 1rem;
+}
+
 /*************************************
 BACKGROUND / COLOR OVERRIDE
 *************************************/
