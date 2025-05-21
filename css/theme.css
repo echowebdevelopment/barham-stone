@@ -13521,6 +13521,8 @@ ul.gallery-content img {
 .block-text .gallery-item img {
   -o-object-fit: cover;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .block-text .gallery-item {
@@ -13528,6 +13530,9 @@ ul.gallery-content img {
   overflow: hidden;
   aspect-ratio: 1;
   padding: 0.5rem;
+}
+.block-text .gallery-item .gallery-icon {
+  height: 100%;
 }
 
 .cta-blurb {
