@@ -46,7 +46,7 @@ $container = get_theme_mod( 'echo_container_type' );
 				</div>
 				<div class="col p-2">
 					<?php echo do_shortcode('[social-icons]'); ?>
-					<a href="https://namm.org.uk/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/css/icons/namm.png'; ?>" class="namm-logo"></a>
+					<a href="https://namm.org.uk/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/css/icons/Namm.png'; ?>" class="namm-logo"></a>
 				</div>
 				<div class="col p-2 text-white">
 					<a href="/enquiry/" class="btn">make an enquiry</a>
