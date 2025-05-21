@@ -781,7 +781,7 @@
                             "choices": {
                                 "wide-first-column": "Wide First Column",
                                 "wide-second-column": "Wide Second Column",
-                                "default-column - Default": "default-column - Default"
+                                "default-column": "Default"
                             },
                             "default_value": "default-column",
                             "return_format": "value",
@@ -1465,5 +1465,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1747754933
+    "modified": 1747812930
 }

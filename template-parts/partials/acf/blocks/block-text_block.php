@@ -25,7 +25,7 @@
 
 <div class="block-text d-flex flex-column py-5 px-2" data-delay="0.1">
     <div class="container">
-        <div class="row align-items-center gx-5">
+        <div class="row align-items-center gx-md-5">
         <div class="<?php if($content_right['content'] == 'blank-block'){ echo 'col-md-12'; }else{ echo $first_col;} ?>">
             <?php 
                 if($content_left['content'] == 'text-block') {
