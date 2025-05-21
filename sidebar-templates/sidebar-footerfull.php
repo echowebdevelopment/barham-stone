@@ -22,10 +22,10 @@ $container = get_theme_mod( 'echo_container_type' );
 
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 ">
 
-				<div class="col p-2">
+				<div class="col p-3>
 					<?php get_template_part( 'global-templates/navbar-branding' ); ?>
 				</div>
-				<div class="col p-2">
+				<div class="col p-3">
 					<h3 class="widget-title">Menu</h3>
 					<?php
 						wp_nav_menu(
@@ -41,14 +41,14 @@ $container = get_theme_mod( 'echo_container_type' );
 						);
 					?>
 				</div>
-				<div class="col p-2">
+				<div class="col p-3">
 					<?php echo do_shortcode('[footer-nap]'); ?>
 				</div>
-				<div class="col p-2">
+				<div class="col p-3">
 					<?php echo do_shortcode('[social-icons]'); ?>
 					<a href="https://namm.org.uk/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/css/icons/Namm.png'; ?>" class="namm-logo"></a>
 				</div>
-				<div class="col p-2 text-white">
+				<div class="col p-3 text-white">
 					<a href="/enquiry/" class="btn">make an enquiry</a>
 					<a href="/enquiry/" class="link-text">GO TO WHOLESALE ENQUIRY</a>
 				</div>
