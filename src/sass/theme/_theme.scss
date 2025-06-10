@@ -774,7 +774,7 @@ ul.top-navbar_socials {
 	width: 100%;
 	gap: 1rem;
  }
- @include media-breakpoint-up(md) {
+ @include media-breakpoint-up(xl) {
 	.menu-btn {
 		margin-left: auto;
 	}

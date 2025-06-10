@@ -13127,7 +13127,7 @@ ul.top-navbar_socials i {
   gap: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-btn {
     margin-left: auto;
   }
