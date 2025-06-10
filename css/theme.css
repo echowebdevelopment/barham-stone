@@ -13445,6 +13445,26 @@ button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
   opacity: 0;
   transition: ease-in-out 0.2s opacity;
 }
+@media (max-width: 767.98px) {
+  .swiper-slide img {
+    opacity: 1;
+    transition: ease-in-out 0.2s opacity;
+  }
+  .swiper-slide .slide-content {
+    background: rgba(93, 93, 85, 0.55);
+    border-radius: 5px;
+    padding: 2rem;
+    transition: ease-in-out 0.1s padding, ease-in-out 0.1s margin-bottom;
+  }
+  .swiper-slide .btn, .swiper-slide .wpcf7 input[type=submit], .wpcf7 .swiper-slide input[type=submit], .swiper-slide .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .swiper-slide a.button, .swiper-slide .woocommerce-info a.button, .woocommerce-info .swiper-slide a.button {
+    background: #C3511E;
+    color: #fff;
+  }
+  .swiper-slide p, .swiper-slide .section-title {
+    opacity: 1;
+    transition: ease-in-out 0.2s opacity;
+  }
+}
 .swiper-slide:hover img {
   opacity: 1;
   transition: ease-in-out 0.2s opacity;
