@@ -13418,8 +13418,7 @@ button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
 
 @media (max-width: 480px) {
   #instagram-gallery-feed-0 {
-    --qligg-columns: 2;
-    --qligg-spacing: 6px;
+    --qligg-columns: 2 !important;
   }
 }
 .swiper-slide {
