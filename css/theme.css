@@ -13421,8 +13421,8 @@ button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
   .instagram-gallery-list > .instagram-gallery-item {
     display: none;
   }
-  .instagram-gallery-list > instagram-gallery-item:nth-child(1),
-  .instagram-gallery-list > instagram-gallery-item:nth-child(2) {
+  .instagram-gallery-list > .instagram-gallery-item:nth-child(1),
+  .instagram-gallery-list > .instagram-gallery-item:nth-child(2) {
     display: block;
   }
 }
