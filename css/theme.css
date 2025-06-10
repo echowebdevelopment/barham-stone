@@ -13416,14 +13416,10 @@ button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
   max-height: max-content;
 }
 
-/* Mobile: Show only the first and second child */
-@media (max-width: 768px) {
-  .instagram-gallery-list > .instagram-gallery-item {
-    display: none;
-  }
-  .instagram-gallery-list > .instagram-gallery-item:nth-child(1),
-  .instagram-gallery-list > .instagram-gallery-item:nth-child(2) {
-    display: block;
+@media (max-width: 480px) {
+  #instagram-gallery-feed-0 {
+    --qligg-columns: 2;
+    --qligg-spacing: 6px;
   }
 }
 .swiper-slide {
