@@ -1043,8 +1043,20 @@ button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
     max-height: max-content;
 }
 
-@media (max-width: 480px) {
+@include media-breakpoint-down(md) {
     #instagram-gallery-feed-0 {
         --qligg-columns: 2 !important;
     }
+	#main-nav .container .navbar-brand {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#main-nav {
+		position: relative;
+		height: 100px;
+	}
+	#main-nav .container button.navbar-toggler {
+		margin-left: auto;
+	}
 }
