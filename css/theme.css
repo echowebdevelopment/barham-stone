@@ -13149,8 +13149,9 @@ ul.top-navbar_socials i {
 #wrapper-footer a {
   color: #fff;
 }
-@media (max-width: 575.98px) {
-  #wrapper-footer {
+
+@media (max-width: 767.98px) {
+  #footer-full-content {
     text-align: center;
   }
 }

@@ -795,7 +795,9 @@ ul.top-navbar_socials {
 	a {
 		color: #fff;
 	}
-	@include media-breakpoint-down(sm) {
+}
+#footer-full-content {
+	@include media-breakpoint-down(md) {
 		text-align: center;
 	}
 }
