@@ -746,29 +746,30 @@ ul.top-navbar_socials {
 		}
 	}
  }
-
- .menu-btn a.nav-link {
-	background: $primary;
-    color: #fff !important;
-    box-shadow: 0 4px 0 rgba(0, 0, 0, .1607843137);
-    border-radius: 4px;
-    display: flex;
-    min-width: 160px;
-    padding: 15px 20px !important;
-    justify-content: space-between;
-    font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
-    gap: 15px;
-    line-height: normal;
-    align-items: center;
-	&:hover {
-		scale: 1.1;
-		background: #D69013;
+@include media-breakpoint-up(xl) { 
+	.menu-btn a.nav-link {
+		background: $primary;
+		color: #fff !important;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, .1607843137);
+		border-radius: 4px;
+		display: flex;
+		min-width: 160px;
+		padding: 15px 20px !important;
+		justify-content: space-between;
+		font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+		gap: 15px;
+		line-height: normal;
+		align-items: center;
+		&:hover {
+			scale: 1.1;
+			background: #D69013;
+		}
+		&::after {
+			content: "\ea3c";
+			font-family: 'icomoon';
+		}
 	}
-	&::after {
-		content: "\ea3c";
-		font-family: 'icomoon';
-	}
- }
+}
  .navbar-nav {
 	width: 100%;
 	gap: 1rem;

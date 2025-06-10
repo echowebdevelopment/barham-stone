@@ -51,12 +51,12 @@ $container = get_theme_mod( 'echo_container_type' );
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location'  => '',
+					'theme_location'  => 'primary',
 					'container_class' => 'offcanvas-body',
 					'container_id'    => '',
 					'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 pe-3',
 					'fallback_cb'     => '',
-					'menu_id'         => 'mobile-menu',
+					'menu_id'         => 'primary-menu',
 					'depth'           => 2,
 					'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 				)
