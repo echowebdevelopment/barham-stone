@@ -12,8 +12,8 @@
         <div class="block-map_nap p-4 rounded-2 bg-gradient-light text-black">
             <h4>Header Offices</h4>
             <?php echo get_field('address', 'options') ?>
-
-            <p>Tel: <a href="tel:<?php echo get_field('phone', 'options') ?>"><?php echo get_field('phone', 'options') ?></a><br>
+            <?php $phone = get_field('phone','options'); ?>
+            <p><?php if(get_field('phone','options')){ echo 'Tel: <a href="tel:'. str_replace(' ', '', $phone) .'">';echo esc_html($phone);echo '</a>'; } ?><br>
             Email: <a href="mailto:<?php echo get_field('email', 'options') ?>"><?php echo get_field('email', 'options') ?></a></p>
         </div>
     </div>

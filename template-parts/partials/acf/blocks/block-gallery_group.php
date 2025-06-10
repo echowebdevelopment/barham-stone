@@ -47,7 +47,9 @@
                                     ?>
                                       <div class="item">
                                             <?php if( $image ): ?>
+                                              <a  href="<?php echo esc_url($image['url']); ?>" data-gallery="<?php echo esc_url($g_title); ?>" class="glightbox" data-title="<?php echo esc_html($title); ?>" data-description="<?php echo esc_html($description); ?>">
                                                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                              </a>
                                             <?php endif; ?>
                                         
                                         <figcaption>

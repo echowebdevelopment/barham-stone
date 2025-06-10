@@ -51,17 +51,24 @@ $container = get_theme_mod( 'echo_container_type' );
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location'  => 'primary',
+					'theme_location'  => '',
 					'container_class' => 'offcanvas-body',
 					'container_id'    => '',
 					'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 pe-3',
 					'fallback_cb'     => '',
-					'menu_id'         => 'main-menu',
+					'menu_id'         => 'mobile-menu',
 					'depth'           => 2,
 					'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 				)
 			);
 			?>
+			<div class="d-inline-block d-xl-none">
+				<ul class="top-navbar_socials">
+					<?php if(get_field('facebook','options')){ echo '<li><a href="'. get_field('facebook','options') .'" target="_blank"><i class="icon-facebook"></i></a></li>'; } ?>
+					<?php if(get_field('instagram','options')){ echo '<li><a href="'. get_field('instagram','options') .'" target="_blank"><i class="icon-instagram"></i></a></li>'; } ?>
+					<?php if(get_field('linkedin','options')){ echo '<li><a href="'. get_field('linkedin','options') .'" target="_blank"><i class="icon-linkedin"></i></a></li>'; } ?>
+				</ul>
+			</div>
 		</div><!-- .offcanvas -->
 
 	</div><!-- .container(-fluid) -->

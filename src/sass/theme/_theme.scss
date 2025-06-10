@@ -461,9 +461,11 @@ a {
 	line-height: normal;
 	gap: 15px;
 	max-width: max-content;
+	padding: 15px 20px;
 	&:hover {
 		background-color: #D69013 !important;
 		color: #fff;
+		scale: 1.1;
 	}
 	&::after {
 		content: "\ea3c";
@@ -697,6 +699,9 @@ h3 {
 	font-size: clamp(0.75rem, 0.659rem + 0.3883vw, 1.125rem);
 	a {
 		color: $white;
+		&:hover {
+			color: $primary;
+		}
 	}
 	span.divider {
 		margin: 0 10px;
@@ -755,7 +760,10 @@ ul.top-navbar_socials {
     gap: 15px;
     line-height: normal;
     align-items: center;
-	
+	&:hover {
+		scale: 1.1;
+		background: #D69013;
+	}
 	&::after {
 		content: "\ea3c";
 		font-family: 'icomoon';
@@ -770,6 +778,15 @@ ul.top-navbar_socials {
 		margin-left: auto;
 	}
 }
+.offcanvas ul.top-navbar_socials i {
+    font-size: 1em;
+}
+.offcanvas ul.top-navbar_socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
 /********************************************************
 ***FOOTER
 ********************************************************/
@@ -781,11 +798,20 @@ ul.top-navbar_socials {
 #wrapper-footer-full .menu {
     list-style: none;
     padding: 0;
+	li {
+		margin-bottom: .17rem;
+	}
 }
 #wrapper-footer-full {
 	background: white;
 	a:not(.btn, .link-text) {
 		color: $dark-grey;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.btn {
+		width: 250px;
 	}
 }
 ul.footer_socials {
@@ -907,6 +933,9 @@ nav.gallery-group_nav #nav-tab {
 		width: 100%;
 		height: 100%;
 		opacity: .8;
+		&:hover {
+			opacity: .3;
+		}
 	}
 	figcaption {
 		position: absolute;
