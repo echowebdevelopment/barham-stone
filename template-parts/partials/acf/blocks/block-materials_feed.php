@@ -32,7 +32,7 @@ $materials_query = new WP_Query($args);
         if ($materials_query->have_posts()) : ?>
             <div class="row materials-list">
                 <?php while ($materials_query->have_posts()) : $materials_query->the_post(); ?>
-                    <div class="col-lg-4 col-md-6 p-2">
+                    <div class="col-lg-4 col-6 p-2">
                         <div class="material-item position-relative">
                             <?php
                                 if ( has_post_thumbnail() ) {
