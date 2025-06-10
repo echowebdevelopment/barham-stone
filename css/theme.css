@@ -13154,8 +13154,12 @@ ul.top-navbar_socials i {
   #footer-full-content {
     text-align: center;
   }
+  #footer-full-content a.btn, #footer-full-content .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #footer-full-content a.button, #footer-full-content .woocommerce-info a.button, .woocommerce-info #footer-full-content a.button,
+  #footer-full-content a.link-text,
+  img.namm-logo {
+    margin: auto;
+  }
 }
-
 #wrapper-footer-full .menu {
   list-style: none;
   padding: 0;
@@ -13412,6 +13416,16 @@ button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
   max-height: max-content;
 }
 
+/* Mobile: Show only the first and second child */
+@media (max-width: 768px) {
+  .instagram-gallery-list > * {
+    display: none;
+  }
+  .instagram-gallery-list > :nth-child(1),
+  .instagram-gallery-list > :nth-child(2) {
+    display: block;
+  }
+}
 .swiper-slide {
   position: relative;
   background: #fff;

@@ -796,11 +796,17 @@ ul.top-navbar_socials {
 		color: #fff;
 	}
 }
-#footer-full-content {
-	@include media-breakpoint-down(md) {
+@include media-breakpoint-down(md) {
+	#footer-full-content {
 		text-align: center;
 	}
+	#footer-full-content a.btn,
+	#footer-full-content a.link-text,
+	img.namm-logo {
+		margin: auto;
+	}		
 }
+
 #wrapper-footer-full .menu {
     list-style: none;
     padding: 0;
@@ -1035,4 +1041,16 @@ body .gform_wrapper ::placeholder {
 
 button.wpcf7-form-control.wpcf7-submit.btn:not(.echo-arrows) {
     max-height: max-content;
+}
+
+/* Mobile: Show only the first and second child */
+@media (max-width: 768px) {
+  .instagram-gallery-list > * {
+    display: none;
+  }
+
+  .instagram-gallery-list > :nth-child(1),
+  .instagram-gallery-list > :nth-child(2) {
+    display: block;
+  }
 }
