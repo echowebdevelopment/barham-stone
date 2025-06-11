@@ -13728,6 +13728,7 @@ ul.gallery-content img {
 }
 .material-item .material-content .section-title {
   font-size: clamp(1.125rem, 0.7913rem + 1.4239vw, 2.5rem);
+  margin-bottom: 0;
 }
 
 .btn-small {
