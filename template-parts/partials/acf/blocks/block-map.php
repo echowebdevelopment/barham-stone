@@ -10,7 +10,7 @@
     <?php echo $args['map'] ?>
     <div class="container">
         <div class="block-map_nap p-4 rounded-2 bg-gradient-light text-black">
-            <h4>Header Offices</h4>
+            <h4>Showroom & Workshop</h4>
             <?php echo get_field('address', 'options') ?>
             <?php $phone = get_field('phone','options'); ?>
             <p><?php if(get_field('phone','options')){ echo 'Tel: <a href="tel:'. str_replace(' ', '', $phone) .'">';echo esc_html($phone);echo '</a>'; } ?><br>
