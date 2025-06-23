@@ -49,7 +49,7 @@ $container = get_theme_mod( 'echo_container_type' );
 					<a href="https://namm.org.uk/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/css/icons/Namm.png'; ?>" class="namm-logo"></a>
 				</div>
 				<div class="col p-3">
-					<h3 class="widget-title">Book Appointment</h3>
+					<h3 class="widget-title">Opening hours</h3>
 					<p>Please call to arrange appointment before visiting.</p>
 					<?php the_field('opening_hours','options') ?>
 					<!--
