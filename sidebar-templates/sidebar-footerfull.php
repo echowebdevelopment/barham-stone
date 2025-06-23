@@ -20,9 +20,9 @@ $container = get_theme_mod( 'echo_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?>" id="footer-full-content" tabindex="-1">
 
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 ">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 ">
 
-				<div class="col p-3">
+				<div class="col p-3>
 					<?php get_template_part( 'global-templates/navbar-branding' ); ?>
 				</div>
 				<div class="col p-3">
@@ -48,11 +48,14 @@ $container = get_theme_mod( 'echo_container_type' );
 					<?php echo do_shortcode('[social-icons]'); ?>
 					<a href="https://namm.org.uk/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/css/icons/Namm.png'; ?>" class="namm-logo"></a>
 				</div>
-				<!--
 				<div class="col p-3 text-white">
+					<h3 class="widget-title">Please call to arrange appointment before visiting</h3>
+					
+					<!--
 					<a href="/enquiry/" class="btn">make an enquiry</a>
 					<a href="/enquiry/" class="link-text">GO TO WHOLESALE ENQUIRY</a>
-				</div>-->
+					-->
+				</div>
 
 			</div>
 
