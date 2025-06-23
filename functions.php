@@ -64,7 +64,7 @@ function set_dynamic_recipients_from_checkbox($contact_form) {
         'Memorials'   => 'clare@barhamstone.com',
         'Interiors' => 'peter@barhamstone.com',
         'Fireplaces/Hearths' => 'info@barhamstone.com',
-        'Wholesale' => 'info@barhamstone.com',
+        'Wholesale' => 'michael@echowebsolutions.co.uk',
     );
 
     // Collect matching emails
