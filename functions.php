@@ -42,3 +42,44 @@ if ( class_exists( 'WooCommerce' ) ) {
 foreach ( $echo_theme_includes as $file ) {
 	require_once get_theme_file_path( $echo_theme_inc_dir . $file );
 }
+
+
+add_filter('wpcf7_before_send_mail', 'set_dynamic_recipients_from_checkbox');
+
+function set_dynamic_recipients_from_checkbox($contact_form) {
+    $submission = WPCF7_Submission::get_instance();
+    if (!$submission) return $contact_form;
+
+    $data = $submission->get_posted_data();
+    
+    // Adjust field name if needed
+    $selected = isset($data['Interested']) ? $data['Interested'] : [];
+
+    if (!is_array($selected)) {
+        $selected = [$selected];
+    }
+
+    // Map checkbox labels to emails
+    $recipients_map = array(
+        'Memorials'   => 'clare@barhamstone.com',
+        'Interiors' => 'peter@barhamstone.com',
+        'Fireplaces/Hearths' => 'info@barhamstone.com',
+        'Wholesale' => 'info@barhamstone.com',
+    );
+
+    // Collect matching emails
+    $emails = array();
+    foreach ($selected as $item) {
+        if (isset($recipients_map[$item])) {
+            $emails[] = $recipients_map[$item];
+        }
+    }
+
+    if (!empty($emails)) {
+        $mail = $contact_form->prop('mail');
+        $mail['recipient'] = implode(',', $emails); // comma-separated list
+        $contact_form->set_properties(array('mail' => $mail));
+    }
+
+    return $contact_form;
+}
