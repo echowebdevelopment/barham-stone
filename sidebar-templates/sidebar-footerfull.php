@@ -48,10 +48,11 @@ $container = get_theme_mod( 'echo_container_type' );
 					<?php echo do_shortcode('[social-icons]'); ?>
 					<a href="https://namm.org.uk/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/css/icons/Namm.png'; ?>" class="namm-logo"></a>
 				</div>
+				<!--
 				<div class="col p-3 text-white">
 					<a href="/enquiry/" class="btn">make an enquiry</a>
 					<a href="/enquiry/" class="link-text">GO TO WHOLESALE ENQUIRY</a>
-				</div>
+				</div>-->
 
 			</div>
 
