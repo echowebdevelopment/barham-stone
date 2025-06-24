@@ -1006,12 +1006,12 @@ nav.gallery-group_nav #nav-tab {
 @include media-breakpoint-up(md) {
 	/* Default: 3-column layout */
 	.item {
-		flex: 1 1 calc(33.333% - 6.7px);
+		flex: 1 1 calc(25% - 6.7px);
 	}
 	/* Target 2-column items using a formula */
 	.item:nth-child(5n - 1),
 	.item:nth-child(5n) {
-		flex: 1 1 calc(50% - 5px);
+		flex: 1 1 calc(33.33% - 5px);
 	}
 }
 @include media-breakpoint-down(md) {
