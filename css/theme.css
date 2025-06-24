@@ -13380,8 +13380,9 @@ nav.gallery-group_nav #nav-tab {
     flex: 1 1 calc(25% - 10px);
   }
   /* Target 2-column items using a formula */
-  .item:nth-child(6n-1),
-  .item:nth-child(6n) {
+  .item:nth-child(11n+5),
+  .item:nth-child(11n+6),
+  .item:nth-child(11n+7) {
     flex: 1 1 calc(33.333% - 10px);
   }
 }
