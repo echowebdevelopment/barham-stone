@@ -26,7 +26,7 @@ $container = get_theme_mod( 'echo_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info text-center text-lg-end">
-						&copy; Barham Stone Ltd | All Rights reserved <?php echo do_shortcode('[current-year]'); ?> | Registration No. 4730372 | <?php echo do_shortcode('[by-ews]'); ?>
+						&copy; Barham Stone Ltd | All Rights reserved <?php echo do_shortcode('[current-year]'); ?>| <a href="/privacy-policy">Privacy Policy</a> | Registration No. 4730372 | <?php echo do_shortcode('[by-ews]'); ?>
 						
 
 					</div><!-- .site-info -->
