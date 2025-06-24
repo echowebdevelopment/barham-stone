@@ -13377,17 +13377,17 @@ nav.gallery-group_nav #nav-tab {
 @media (min-width: 768px) {
   /* Default: 3-column layout */
   .item {
-    flex: 1 1 calc(25% - 6.7px);
+    flex: 1 1 calc(25% - 10px);
   }
   /* Target 2-column items using a formula */
-  .item:nth-child(5n-1),
-  .item:nth-child(5n) {
-    flex: 1 1 calc(33.33% - 5px);
+  .item:nth-child(6n-1),
+  .item:nth-child(6n) {
+    flex: 1 1 calc(33.333% - 10px);
   }
 }
 @media (max-width: 767.98px) {
   .item {
-    flex: 1 1 calc(50% - 6.7px);
+    flex: 1 1 calc(50% - 10px);
   }
 }
 /*pop up*/
