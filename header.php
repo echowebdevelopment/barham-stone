@@ -50,6 +50,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 				<?php if(get_field('linkedin','options')){ echo '<li><a href="'. get_field('linkedin','options') .'" target="_blank"><i class="icon-linkedin"></i></a></li>'; } ?>
 			</ul>
 			<span class="divider d-none d-xl-inline-block"> | </span><a href="/enquiry/" class="d-none d-xl-inline-block">Kitchen Quote</a>
+			<?php do_shortcode('[gtranslate]') ?>
 			</div>
 		</div>
 		<?php get_template_part( 'global-templates/navbar', 'offcanvas' ); ?>
