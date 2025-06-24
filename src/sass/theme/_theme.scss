@@ -1009,9 +1009,9 @@ nav.gallery-group_nav #nav-tab {
 		flex: 1 1 calc(25% - 10px);
 	}
 	/* Target 2-column items using a formula */
-	.item:nth-child(11n + 5),
-	.item:nth-child(11n + 6),
-	.item:nth-child(11n + 7) {
+	.item:nth-child(7n - 2),
+	.item:nth-child(7n - 1),
+	.item:nth-child(7n) {
 		flex: 1 1 calc(33.333% - 10px);
 	}
 }
