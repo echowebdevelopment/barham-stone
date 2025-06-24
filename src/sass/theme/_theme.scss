@@ -874,7 +874,9 @@ ul.footer_socials {
     font-weight: 600;
 }
 img.namm-logo {
-    height: 100px;
+	width: 100%;
+	max-width: 90px;
+	height: auto;
     display: block;
 }
 .site-info {
