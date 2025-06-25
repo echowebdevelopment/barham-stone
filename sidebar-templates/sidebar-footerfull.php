@@ -20,7 +20,7 @@ $container = get_theme_mod( 'echo_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?>" id="footer-full-content" tabindex="-1">
 
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 ">
+			<div class="row">
 
 				<div class="col p-3">
 					<?php get_template_part( 'global-templates/navbar-branding' ); ?>

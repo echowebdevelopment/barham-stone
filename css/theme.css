@@ -12761,6 +12761,13 @@ body {
 #wrapper-footer-full {
   font-size: 1rem;
 }
+#wrapper-footer-full .col {
+  width: 23%;
+}
+#wrapper-footer-full .col:nth-child(4),
+#wrapper-footer-full .col:first-child {
+  width: 15%;
+}
 
 a {
   text-decoration: none;
