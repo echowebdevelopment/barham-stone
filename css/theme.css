@@ -12762,11 +12762,19 @@ body {
   font-size: 1rem;
 }
 #wrapper-footer-full .col {
-  width: 23%;
+  max-width: 23%;
 }
 #wrapper-footer-full .col:nth-child(4),
 #wrapper-footer-full .col:first-child {
-  width: 15%;
+  max-width: 15%;
+}
+@media (max-width: 991.98px) {
+  #wrapper-footer-full .col {
+    max-width: 50%;
+  }
+  #wrapper-footer-full .col:first-child {
+    max-width: 100%;
+  }
 }
 
 a {
