@@ -12778,7 +12778,7 @@ body {
     max-width: 100%;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   #wrapper-footer-full .col:nth-child(4),
   #wrapper-footer-full .col {
     max-width: 100%;
