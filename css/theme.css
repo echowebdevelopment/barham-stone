@@ -12769,8 +12769,20 @@ body {
   max-width: 15%;
 }
 @media (max-width: 991.98px) {
+  #wrapper-footer-full .col:nth-child(4),
   #wrapper-footer-full .col {
     max-width: 50%;
+    flex: auto;
+  }
+  #wrapper-footer-full .col:first-child {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  #wrapper-footer-full .col:nth-child(4),
+  #wrapper-footer-full .col {
+    max-width: 100%;
+    flex: auto;
   }
   #wrapper-footer-full .col:first-child {
     max-width: 100%;

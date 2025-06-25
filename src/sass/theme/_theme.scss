@@ -451,8 +451,20 @@ body {
 		max-width: 15%;
 	}
 	@include media-breakpoint-down(lg) {
+		.col:nth-child(4),
 		.col {
 			max-width: 50%;
+        	flex: auto;
+		}
+		.col:first-child {
+			max-width: 100%;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.col:nth-child(4),
+		.col {
+			max-width: 100%;
+        	flex: auto;
 		}
 		.col:first-child {
 			max-width: 100%;
