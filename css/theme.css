@@ -13700,7 +13700,7 @@ ul.gallery-content img {
 .block-text .gallery-item img {
   -o-object-fit: cover;
   object-fit: cover;
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -13712,6 +13712,7 @@ ul.gallery-content img {
 }
 .block-text .gallery-item .gallery-icon {
   height: 100%;
+  background: #6E6E6E;
 }
 
 .cta-blurb {
