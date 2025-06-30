@@ -12965,6 +12965,10 @@ input[type=checkbox]:hover {
   color: black;
 }
 
+.wpcf7-acceptance input[type=checkbox]::before {
+  color: green;
+}
+
 .echo-arrows {
   box-shadow: none;
   border: none;
