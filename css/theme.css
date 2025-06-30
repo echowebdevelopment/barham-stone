@@ -12950,7 +12950,7 @@ input[type=checkbox]::before {
   height: 15px;
   clip-path: polygon(14% 50%, 25% 61%, 45% 80%, 85% 25%, 75% 15%, 43% 61%, 25% 45%);
   transform: scale(0);
-  background-color: #C3511E;
+  background-color: green;
   display: block;
   position: absolute;
   top: 3px;
@@ -12963,10 +12963,6 @@ input[type=checkbox]:checked::before {
 
 input[type=checkbox]:hover {
   color: black;
-}
-
-.wpcf7-acceptance input[type=checkbox]::before {
-  color: green;
 }
 
 .echo-arrows {
